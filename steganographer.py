@@ -502,7 +502,6 @@ def retrieve():
 
 print("CSE2008 Network Security Project")
 print("Title: Image Steganography Using a LSB Based Embedding Technique")
-print("Members:\n19BCI0001\n19BCI0007\n19BCI0013\n19BCI0036")
 ipPath = input("\nEnter the name of file containing input text: ")
 imPath = input("Enter the name of file containing the image: ")
 img = cv2.imread(imPath, 1)
