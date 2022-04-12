@@ -9,4 +9,3 @@ It provides a multiple of layers of protection of the data.
 And not only is the data encrypted, if the attacker manages to break the first layer of encryption,
 the information won’t make any sense, as it’ll just be the carrier file.
 The additional module used is opencv which is used only for reading and modifying image pixels.
-There are 4 members in the project with modules divided to everyone.
