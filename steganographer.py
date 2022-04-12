@@ -500,8 +500,8 @@ def retrieve():
     print("Retrieved bits:", retrievedBits, "bits")
 
 
-print("CSE2008 Network Security Project")
-print("Title: Image Steganography Using a LSB Based Embedding Technique")
+print("19BCI0001 Dayeem Parkar")
+print("Title: Image Steganography Using an Edge Based Embedding Technique")
 ipPath = input("\nEnter the name of file containing input text: ")
 imPath = input("Enter the name of file containing the image: ")
 img = cv2.imread(imPath, 1)
