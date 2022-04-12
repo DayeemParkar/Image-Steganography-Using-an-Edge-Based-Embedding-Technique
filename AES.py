@@ -268,7 +268,6 @@ keys = []
 for x in range(len(words)):
     if x == 0 or x % 4 == 0:
         count = 0
-        # print(new)
         if len(new):
             keys.append(new)
             final = [''.join(x) for x in new]
