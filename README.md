@@ -50,5 +50,5 @@ For example: In the above figure, if data is 1111101, start traversing from root
 ## Hiding Capacity
 For an image with r rows and c columns:
 <br>top = ceil(r/2) - 1
-<br>Number of bits that can be embedded = 6*top*(r + c) – 12*(top)*(top + 1)
-<br>Ideally a 1920*1080 image or higher should be used that would allow 758 Kilo Bytes of compressed text to be embedded
+<br>Number of bits that can be embedded = 6xtopx(r + c) – 12x(top)x(top + 1)
+<br>Ideally a 1920x1080 image or higher should be used that would allow 758 Kilo Bytes of compressed text to be embedded
