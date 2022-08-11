@@ -7,6 +7,7 @@
 - opencv-python
 
 ## Methodology
+<p align="justify">
 <b>Text Compression</b><br>
 Huffman coding has been used for this purpose. Frequency of occurrence of all characters in input is calculated and placed in bottom of a tree.
 <br>Then, the two nodes with lowest frequencies are taken and added to make a node. This process is repeated until only one node is left (root node).
@@ -46,9 +47,12 @@ Current node is set to root node. The data is traversed, if 0 occurs we go left 
 ![Image Terminology](images/imgTerms.PNG)
 
 For example: In the above figure, if data is 1111101, start traversing from root node. We go right, right, right. It is a leaf so ‘a’ is printed and go back to root. <br>Now go right, right, left, right. It is a leaf so ‘u’ is printed.
+</p>
 
 ## Hiding Capacity
+<p align="justify">
 For an image with r rows and c columns:
 <br>top = ceil(r/2) - 1
 <br>Number of bits that can be embedded = 6*top*(r + c) – 12*(top)*(top + 1)
 <br>Ideally a 1920*1080 image or higher should be used that would allow 758 Kilo Bytes of compressed text to be embedded
+</p>
