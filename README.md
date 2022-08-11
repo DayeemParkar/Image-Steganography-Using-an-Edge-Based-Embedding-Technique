@@ -7,7 +7,7 @@
 - opencv-python
 
 ## Methodology
-- Text Compression<br>
+<b>Text Compression</b><br>
 Huffman coding has been used for this purpose. Frequency of occurrence of all characters in input is calculated and placed in bottom of a tree.
 <br>Then, the two nodes with lowest frequencies are taken and added to make a node. This process is repeated until only one node is left (root node).
 <br>From each node, the node to the left is marked 0 and right is marked 1. Then each character’s code is path from root node to the character.
@@ -16,7 +16,7 @@ Huffman coding has been used for this purpose. Frequency of occurrence of all ch
 
 In the above figure, ‘i’ will be represented by 00, ‘o’ will be represented as 11001 and so on.
 
-- Text Embedding Algorithm<br>
+<b>Text Embedding Algorithm</b><br>
 For an image, some terminology is defined.
 <br>The top side is side 0 and increments in clockwise direction. Each side also has a left and right indicator that is relative to facing outwards from that side.
 <br>The sides are also represented in 2 bit binary as 00, 01, 10 and 11.
@@ -34,13 +34,13 @@ For an image, some terminology is defined.
 <br>Now, we have the order of sides in which data has to be embedded and operation modes of all of them, so we can start embedding the input. No data has to be embedded in the corner pieces.
 <br>The length of the input is found, converted to a 16 bit binary and then appended in the beginning that determines the terminating codition while retrieving.
 
-- Text Retrieving Algorithm<br>
+<b>Text Retrieving Algorithm</b><br>
 While embedding, we had stored the side order and modes in 3 corners. First, that information in retrieved and 4th side is the side not contained in it and has mode 0.
 <br>The bits are extracted similar to the embedding process, going through the sides according to the order and moving to next pixels in side according to the operation mode. If we reach the end of any side, then we have to go one edge inwards and get the side order and modes corresponding to that edge again.
 <br>While embedding, we had padded the length of the message in front of the input by converting it into 16 bit binary. So after first 16 bits are retrieved, convert it to decimal. That will provide how many more bits are left to be retrieved.
 <br>Once these bits are retrieved, we have successfully recovered the embedded bits. From the recovered data, discard first 16 bits as they are no longer useful.
 
-- Text Decompression<br>
+<b>Text Decompression</b><br>
 Current node is set to root node. The data is traversed, if 0 occurs we go left in the tree otherwise we go right in the tree. If a leaf node occurs we have obtained a character, then we go back to root node and continue.
 
 ![Image Terminology](images/imgTerms.PNG)
