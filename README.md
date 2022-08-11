@@ -43,7 +43,7 @@ While embedding, we had stored the side order and modes in 3 corners. First, tha
 <b>Text Decompression</b><br>
 Current node is set to root node. The data is traversed, if 0 occurs we go left in the tree otherwise we go right in the tree. If a leaf node occurs we have obtained a character, then we go back to root node and continue.
 
-![Image Terminology](images/imgTerms.PNG)
+![Image Terminology](images/huffman.PNG)
 
 For example: In the above figure, if data is 1111101, start traversing from root node. We go right, right, right. It is a leaf so ‘a’ is printed and go back to root. <br>Now go right, right, left, right. It is a leaf so ‘u’ is printed.
 
