@@ -1,4 +1,4 @@
-# Image Stegonagraphy Using an Edge Based Embedding Technique
+# Image Steganography Using an Edge Based Embedding Technique
 ## Prerequisites
 - Python 3.7 or above
 - Python virtual environment
